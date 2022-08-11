@@ -21,6 +21,7 @@ type BootstrapConfig struct {
 
 var bootstrapConfigs []BootstrapConfig
 
+// Возвращаем слайс кубер интерфейсов и ошибку. Разобраться чего тут вообще происходит...
 func CreateBootstrapClients() ([]kubernetes.Interface, error) {
 	var bootstrapClients []kubernetes.Interface
 
